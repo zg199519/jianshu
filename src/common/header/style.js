@@ -45,18 +45,6 @@ const NavItem = styled.div `
 const SearchWrapper = styled.div`
   position: relative;
   float: left;
-  .slide-enter{
-    transition: all .2s ease-out;
-  }
-  .slide-enter-active{
-    width: 240px;
-  }
-  .slide-exit{
-    transition: all .2s ease-out;
-  }
-  .slide-exit-active{
-    width: 160px;
-  }
   .iconfont{
     position: absolute;
     right: 5px;
@@ -94,6 +82,18 @@ const NavSearch = styled.input.attrs({
   &.focused {
     width: 240px;
   }
+  &.slide-enter{
+    transition: all .2s ease-out;
+  }
+  &.slide-enter-active{
+    width: 240px;
+  }
+  &.slide-exit{
+    transition: all .2s ease-out;
+  }
+  &.slide-exit-active{
+    width: 160px;
+  }
 `
 
 const Addition = styled.div`
@@ -120,6 +120,53 @@ const Button = styled.div`
   }
 `
 
+const SearchInfo = styled.div`
+  position: absolute;
+  left: 0;
+  top: 58px;
+  min-height: 56px;
+  width: 240px;
+  padding: 0 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+`
 
+const SearchInfoTitle = styled.div`
+  margin-top: 20px;
+  margin-bottom: 15px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #969696;
+`
 
-export { HeaderWrapper, Logo, Nav, NavItem, NavSearch, Addition, Button, SearchWrapper}
+const SearchInfoSwitch = styled.span`
+  float: right;
+  float-size: 14px;
+  cursor: pointer;
+`
+
+const SearchInfoItem = styled.a`
+  display: block;
+  float: left;
+  padding:0 5px;
+  line-height: 20px;
+  border: 1px solid #ddd;
+  float-size: 12px;
+  color: #787878;
+  margin-right:10px;
+  border-radius: 3px;
+  margin-bottom:15px;
+`
+
+export {  HeaderWrapper, 
+          Logo, 
+          Nav, 
+          NavItem, 
+          NavSearch, 
+          Addition, 
+          Button, 
+          SearchWrapper,
+          SearchInfo,
+          SearchInfoTitle,
+          SearchInfoSwitch,
+          SearchInfoItem
+        }

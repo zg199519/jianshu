@@ -1,8 +1,11 @@
 import Header from './common/header/index'
+import { Provider } from 'react-redux'
+import store from './store'
 function App() {
   return (
-    <Header/>
+    <Provider store={ store }>
+      <Header/>
+    </Provider>
   );
 }
-
 export default App;

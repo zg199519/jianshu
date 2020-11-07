@@ -80,6 +80,34 @@ yarn add styled-components   安装
 Reset CSS
 
 ## 动画效果插件
+yarn add react-transition-group
+
+## 数据管理
+yarn add redux
+yarn add react-redux
+
+## 状态管理开发者工具
+redux-devtools-extension
+
+一个文件代码不要超过300行 建议
+
+## immutable.js  
+yarn add immutable
+第三方模块 帮助我们生成immutable 对象  不可改变的
+
+
+## redux-immutable
+管理数据
+yarn add redux-immutable 
+
+## redux-thunk
+让我在 redux 里面可以使用函数
+yarn add redux-thunk
+
+## axios
+yarn add axios
+
+
 
 
 
