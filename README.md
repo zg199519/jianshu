@@ -107,6 +107,10 @@ yarn add redux-thunk
 ## axios
 yarn add axios
 
+## react-router-dom
+路由
+yarn add react-router-dom
+
 
 
 
